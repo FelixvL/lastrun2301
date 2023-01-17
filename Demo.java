@@ -1,4 +1,4 @@
-class Demo{   // AE
+class Demo{   // AF
 	public static void main(String args[]){
 		Voedsel v = new Pizza();
 		v.bakken(50);
@@ -13,7 +13,7 @@ class Voedsel{
 	}
 }
 class Pizza extends Voedsel{
-	void bakken(){
+	void bakken(int graden){
 		System.out.println("bakken");
 	}
 	Pizza(){
