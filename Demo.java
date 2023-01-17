@@ -1,4 +1,4 @@
-class Demo{   // AF
+class Demo{   // AG
 	public static void main(String args[]){
 		Voedsel v = new Pizza();
 		v.bakken(50);
@@ -8,7 +8,7 @@ class Demo{   // AF
 
 class Voedsel{
 	int prijs = 24;
-	void bakken(int graden){
+	void bakken(){
 		System.out.println("extra bakken "+ graden);
 	}
 }
