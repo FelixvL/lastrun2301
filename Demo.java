@@ -1,24 +1,23 @@
-class Demo{   // AD
+class Demo{   // AE
 	public static void main(String args[]){
-		System.out.println("Hij doet het");
-		Voeding v = new Voeding();
-		Voeding r = new Voeding();
-		v.oogsten();
-		v.oogsten();
-		v.prijs += 25;
-		System.out.println(v.prijs);
-		r = v;
-		System.out.println(r.prijs);
-		v.oogsten();
-		System.out.println(r.prijs);
+		Voedsel v = new Pizza();
+		v.bakken(50);
+
 	}
 }
 
-class Voeding{
-	int prijs;
-	void oogsten(){
-		prijs++;
-		System.out.println("Geoogst");
+class Voedsel{
+	int prijs = 24;
+	void bakken(int graden){
+		System.out.println("extra bakken "+ graden);
 	}
-
+}
+class Pizza extends Voedsel{
+	void bakken(){
+		System.out.println("bakken");
+	}
+	Pizza(){
+		prijs = 36;
+		System.out.println("er wordt pizza gemaakt");
+	}
 }
