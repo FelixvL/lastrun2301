@@ -1,7 +1,7 @@
-class Demo{   // AG
+class Demo{   // AH
 	public static void main(String args[]){
 		Voedsel v = new Pizza();
-		v.bakken(50);
+		v.bakken();
 
 	}
 }
@@ -9,7 +9,7 @@ class Demo{   // AG
 class Voedsel{
 	int prijs = 24;
 	void bakken(){
-		System.out.println("extra bakken "+ graden);
+		System.out.println("extra bakken ");
 	}
 }
 class Pizza extends Voedsel{
