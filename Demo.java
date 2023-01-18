@@ -1,21 +1,26 @@
-class Demo{   // BE
+class Demo{   // BF
 	public static void main(String args[]){
 		Vraag c = new StrikVraag();
 		c.lopen();
 		System.out.println(c.a);
+		c.go();
 	}
 }
-class Vraag{
+abstract class Vraag{
 	int a = 3;
-	void lopen(){
+	public void lopen(){
 		System.out.println("hoi");
 	}
+	abstract void go();
 	
 }
 class StrikVraag extends Vraag{
 	int a = 4;
 	void lopen(){
 		System.out.println("doei");
+	}
+	public void go(){
+		System.out.println("Go");
 	}
 }
 
