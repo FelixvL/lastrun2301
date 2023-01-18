@@ -1,29 +1,20 @@
-class Demo{   // BB
+class Demo{   // BC
 	public static void main(String args[]){
-		Vraag v = new Vraag();
-		v.awoord = new Antwoord();
-		v.awoord.juistAntwoord = 5;
-		v.vraagNr = 23;
-		Vraag b = new Vraag();
-		System.out.println(b.vraagNr);
-		System.out.println( v.geefAntwoord().juistAntwoord );
-		System.out.println( b.geefAntwoord().juistAntwoord );
+		Vraag c = new Vraag();
+		c.lopen();
 	}
 }
 class Vraag{
-	String deTekst;
-	int vraagNr;
-	Antwoord awoord;
-	Antwoord geefAntwoord(){
-		System.out.println("geef antwoord");
-		return awoord;
+	static void lopen(){
+		System.out.println("hoi");
+		wandelen();
+	}
+	void wandelen(){
+		System.out.println("doei");
 	}
 }
 class Antwoord{
-	int juistAntwoord;
-	Antwoord(){
-		System.out.println("Een Antwoord");
-	}
+
 }
 
 
