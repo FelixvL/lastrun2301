@@ -1,4 +1,4 @@
-class Demo{   // BA
+class Demo{   // BB
 	public static void main(String args[]){
 		Vraag v = new Vraag();
 		v.awoord = new Antwoord();
@@ -6,12 +6,18 @@ class Demo{   // BA
 		v.vraagNr = 23;
 		Vraag b = new Vraag();
 		System.out.println(b.vraagNr);
+		System.out.println( v.geefAntwoord().juistAntwoord );
+		System.out.println( b.geefAntwoord().juistAntwoord );
 	}
 }
 class Vraag{
 	String deTekst;
-	static int vraagNr;
+	int vraagNr;
 	Antwoord awoord;
+	Antwoord geefAntwoord(){
+		System.out.println("geef antwoord");
+		return awoord;
+	}
 }
 class Antwoord{
 	int juistAntwoord;
