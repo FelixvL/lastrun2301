@@ -1,25 +1,23 @@
-class Demo{   // AI
+class Demo{   // BA
 	public static void main(String args[]){
-		Voedsel v = new Pizza();
-		v.bakken();
-		System.out.println(v.prijs);
-
+		Vraag v = new Vraag();
+		v.awoord = new Antwoord();
+		v.awoord.juistAntwoord = 5;
+		v.vraagNr = 23;
+		Vraag b = new Vraag();
+		System.out.println(b.vraagNr);
+	}
+}
+class Vraag{
+	String deTekst;
+	static int vraagNr;
+	Antwoord awoord;
+}
+class Antwoord{
+	int juistAntwoord;
+	Antwoord(){
+		System.out.println("Een Antwoord");
 	}
 }
 
-class Voedsel{
-	int prijs = 24;
-	void bakken(){
-		System.out.println("extra bakken ");
-	}
-}
-class Pizza extends Voedsel{
-	int bakken(){
-		System.out.println("bakken");
-		return prijs++;
-	}
-	Pizza(){
-		prijs = 36;
-		System.out.println("er wordt pizza gemaakt");
-	}
-}
+
