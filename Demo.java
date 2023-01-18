@@ -1,24 +1,22 @@
-class Demo{   // BD
+class Demo{   // BE
 	public static void main(String args[]){
-		Vraag c = new Vraag();
-		c.wandelen();
-		char t = 25;
-		t++;
-		int h = t;
-		System.out.println(h);
+		Vraag c = new StrikVraag();
+		c.lopen();
+		System.out.println(c.a);
 	}
 }
 class Vraag{
-	static void lopen(){
+	int a = 3;
+	void lopen(){
 		System.out.println("hoi");
 	}
-	void wandelen(){
-		lopen();
+	
+}
+class StrikVraag extends Vraag{
+	int a = 4;
+	void lopen(){
 		System.out.println("doei");
 	}
-}
-class Antwoord{
-
 }
 
 
