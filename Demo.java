@@ -1,18 +1,23 @@
-class Demo{     // UD
+class Demo{     // UE
 	public static void main(String[] args){
 		System.out.println("rij");
-		CCC a = q -> q < 3;
-		System.out.println( a.doen(4) );
+		Persoon p = new Persoon();
+		p.rondlopen();
 		System.out.println("kolom"); 
 	}
 }
 
 
 interface CCC{
-	boolean doen(int a);
-
+	void rondlopen();
 }
 
+class Persoon implements CCC{
+	void rondlopen(){
+		System.out.println("rondlopen");
+	}
+
+}
 
 
 
