@@ -1,22 +1,21 @@
-class Demo{     // TK
+class Demo{     // TN
 	public static void main(String[] args){
-		System.out.println("maan");
-		Fiets f = new MTB();
-		System.out.println(f.speed);
-		f.fietsen();
-		System.out.println("zon");
+		System.out.println("Mickey");
+		Park p = new Park();
+		p.fotosynthese();
+		System.out.println("Donald");
 	}
 }
-class Fiets{
-	int speed = 3;
-	void fietsen(){
-		System.out.println("f in mtb" + speed);
+class Park{
+	Boom b1 = new Boom();
+	void fotosynthese(){
+		System.out.println("fotosynthese");
+		b1.groeien();
 	}
 }
-class MTB extends Fiets{
-	int speed = 9;
-	void fietsen(){
-		System.out.println("f in mtb" + speed);
+class Boom{
+	void groeien() throws Error{
+		System.out.println("groeien");
 	}
 }
 
