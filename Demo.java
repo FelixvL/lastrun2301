@@ -1,16 +1,20 @@
-class Demo{     // TC
+class Demo{     // TD
 	public static void main(String[] args){
 		System.out.println("hoi");
+		Tent.doen = 15;
 		Tent t = new Tent();
-		Tent d = new Tent();
+		Tent d = t;
+		d.doen++;
+		System.out.println(d.doen++);
 		d.openen();
+		System.out.println(t.doen++);
 	}
 }
 
 class Tent{
 	boolean dicht;
 
-	static int doen = doen();
+	int doen = doen();
 
 	Tent(){
 		System.out.println("een tent");
@@ -25,7 +29,7 @@ class Tent{
 		if(dicht){
 			System.out.println("open");	
 		}else{
-			System.out.println("dicht");
+			System.out.println("dicht" + doen);
 		}
 	}
 
