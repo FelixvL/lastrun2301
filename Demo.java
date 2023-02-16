@@ -1,4 +1,4 @@
-class Demo{     // TN
+class Demo{     // TO
 	public static void main(String[] args){
 		System.out.println("Mickey");
 		Park p = new Park();
@@ -14,7 +14,7 @@ class Park{
 	}
 }
 class Boom{
-	void groeien() throws Error{
+	void groeien() throws Exception{
 		System.out.println("groeien");
 	}
 }
