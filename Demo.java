@@ -1,7 +1,7 @@
-class Demo{     // TD
+class Demo{     // TE
 	public static void main(String[] args){
 		System.out.println("hoi");
-		Tent.doen = 15;
+		new Tent().doen = 15;
 		Tent t = new Tent();
 		Tent d = t;
 		d.doen++;
