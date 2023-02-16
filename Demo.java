@@ -1,23 +1,11 @@
-class Demo{     // TO
+class Demo{     // UA
 	public static void main(String[] args){
-		System.out.println("Mickey");
-		Park p = new Park();
-		p.fotosynthese();
-		System.out.println("Donald");
+		System.out.println("rij");
+		int[] a[] = new int[][];
+		System.out.println("kolom"); 
 	}
 }
-class Park{
-	Boom b1 = new Boom();
-	void fotosynthese(){
-		System.out.println("fotosynthese");
-		b1.groeien();
-	}
-}
-class Boom{
-	void groeien() throws Exception{
-		System.out.println("groeien");
-	}
-}
+
 
 
 
