@@ -1,10 +1,23 @@
-class Demo{     // TA
+class Demo{     // TB
 	public static void main(String[] args){
 		System.out.println("hoi");
-		float f = 23.3;
-		System.out.println(f);
-		System.out.println("Einde "+ 4 + 4);
+		Tent t = new Tent();
+		Tent d = new Tent();
+		d.openen();
 	}
+}
+
+class Tent{
+	boolean dicht;
+
+	void openen(){
+		if(dicht){
+			System.out.println("open");	
+		}else{
+			System.out.println("dicht");
+		}
+	}
+
 }
 
 
