@@ -1,38 +1,13 @@
-class Demo{     // TE
+class Demo{     // TF
 	public static void main(String[] args){
-		System.out.println("hoi");
-		new Tent().doen = 15;
-		Tent t = new Tent();
-		Tent d = t;
-		d.doen++;
-		System.out.println(d.doen++);
-		d.openen();
-		System.out.println(t.doen++);
+		System.out.println("maan");
+		wandelen();
+		System.out.println("zon");
+	}
+	void wandelen(){
+		System.out.println("wandelen");
 	}
 }
 
-class Tent{
-	boolean dicht;
-
-	int doen = doen();
-
-	Tent(){
-		System.out.println("een tent");
-	}
-
-	static int doen(){
-		System.out.println("niet doen");
-		return 4;
-	}
-
-	void openen(){
-		if(dicht){
-			System.out.println("open");	
-		}else{
-			System.out.println("dicht" + doen);
-		}
-	}
-
-}
 
 
