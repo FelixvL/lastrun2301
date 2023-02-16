@@ -1,4 +1,4 @@
-class Demo{     // TH
+class Demo{     // TI
 	public static void main(String[] args){
 		System.out.println("maan");
 		Fiets f = new MTB();
@@ -11,9 +11,6 @@ class Fiets{
 	int speed = 3;
 	Fiets(){
 		System.out.println("Fiets");
-	}
-	void fietsen(){
-		System.out.println("f in fiets");
 	}
 }
 class MTB extends Fiets{
